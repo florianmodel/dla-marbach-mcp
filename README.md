@@ -29,7 +29,7 @@ Requires **Node.js 20 or newer**.
 ### Claude Code
 
 ```bash
-claude mcp add dla-marbach -- npx -y github:florianmodel/dla-marbach-mcp
+claude mcp add dla-marbach -- npx -y dla-marbach-mcp
 ```
 
 ### Claude Desktop, Cursor, VS Code and other MCP clients
@@ -42,7 +42,7 @@ which opens `claude_desktop_config.json`):
   "mcpServers": {
     "dla-marbach": {
       "command": "npx",
-      "args": ["-y", "github:florianmodel/dla-marbach-mcp"],
+      "args": ["-y", "dla-marbach-mcp"],
       "env": { "DLA_EXPORT_DIR": "/path/to/your/exports" }
     }
   }
