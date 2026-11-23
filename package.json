@@ -1,0 +1,41 @@
+{
+  "name": "dla-marbach-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Deutsches Literaturarchiv Marbach catalog (DLA Data+ API)",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "dla-marbach",
+    "deutsches-literaturarchiv",
+    "digital-humanities",
+    "archive",
+    "library-catalog",
+    "solr"
+  ],
+  "homepage": "https://github.com/florianmodel/dla-marbach-mcp#readme",
+  "bugs": "https://github.com/florianmodel/dla-marbach-mcp/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianmodel/dla-marbach-mcp.git"
+  },
+  "license": "0BSD",
+  "type": "module",
+  "bin": { "dla-marbach-mcp": "dist/index.js" },
+  "main": "dist/index.js",
+  "files": ["dist/index.js", "dist/api.js", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "start": "node dist/index.js",
+    "smoke": "node dist/smoke.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0"
+  }
+}
